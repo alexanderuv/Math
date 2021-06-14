@@ -21,6 +21,8 @@
 
 #if os(Linux)
     import Glibc
+#elseif os(Windows)
+    import WinSDK
 #else
     import Darwin.C
 #endif
